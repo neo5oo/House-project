@@ -1,0 +1,43 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav__link {
+  position: relative;
+  z-index: 5;
+  outline: none;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-shark;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: $color-surf;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav__link:focus::after {
+  opacity: 1;
+}
+
+.nav__link:hover {
+  color: $color-leaves;
+}
+
+.nav__link:active {
+  color: $color-killarney;
+}

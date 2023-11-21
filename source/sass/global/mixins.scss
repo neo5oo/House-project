@@ -1,0 +1,32 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: $gap;
+}
+
+@mixin title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 110%;
+  color: $color-shark;
+}
+
+@mixin container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

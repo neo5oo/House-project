@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  outline: none;
+  border: 1px solid transparent;
+  padding: 20px 40px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: $color-leaves;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn--stroke {
+  border: 1px solid currentColor;
+}
+
+.btn--stroke:focus {
+  background-color: $color-surf;
+}
+
+.btn--stroke:hover {
+  color: #fff;
+  background-color: $color-leaves;
+}
+
+.btn--stroke:active {
+  color: #fff;
+  background-color: $color-killarney;
+}
+
+.btn--fill {
+  color: var(--color-shark);
+  background-color: $color-sand;
+}
+
+.btn--fill:focus {
+  border-color: $color-mandalay;
+  background-color: $color-corn;
+}
+
+.btn--fill:hover {
+  background-color: $color-corn;
+}
+
+.btn--fill:active {
+  background-color: $color-anzac;
+}

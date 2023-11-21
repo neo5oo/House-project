@@ -1,0 +1,39 @@
+.cart {
+  position: relative;
+  outline: none;
+}
+
+.cart svg {
+  position: relative;
+  z-index: 5;
+  stroke: $color-shark;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.cart::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  background-color: $color-surf;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cart:focus svg {
+  stroke: $color-leaves;
+}
+
+.cart:focus::after {
+  opacity: 1;
+}
+
+.cart:hover svg {
+  stroke: $color-leaves;
+}
+
+.cart:active svg {
+  stroke: $color-killarney;
+}

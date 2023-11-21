@@ -1,0 +1,18 @@
+.header {
+  padding: 31px 0;
+  background-color: $color-gin;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: 60px;
+}
