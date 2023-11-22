@@ -1,0 +1,85 @@
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+.catalog__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.catalog__title {
+  margin-right: 20px;
+}
+
+.catalog-tabs {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-tabs__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.catalog-tabs__btn {
+  position: relative;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 21px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-shark;
+  background: $color-surf;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.catalog-tabs__btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid $color-leaves;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.catalog-tabs__btn:focus {
+  background-color: $color-surf;
+}
+
+.catalog-tabs__btn:focus::after {
+  opacity: 1;
+}
+
+.catalog-tabs__btn:hover {
+  color: #fff;
+  background-color: $color-leaves;
+}
+
+.catalog-tabs__btn:active {
+  color: #fff;
+  background-color: $color-killarney;
+}
+
+.catalog-tabs__btn--active {
+  color: #fff;
+  background-color: $color-killarney;
+}
+
+.catalog-tabs__btn--active:focus {
+  color: $color-shark;
+}
+
+.catalog-list {
+  row-gap: $gap;
+}
+
+.catalog__item {
+  grid-column: 4 span;
+}
