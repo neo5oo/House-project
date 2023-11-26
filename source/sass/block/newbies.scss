@@ -1,0 +1,56 @@
+.newbies {
+  position: relative;
+  overflow: hidden;
+  padding-top: 66px;
+  padding-bottom: 73px;
+  background-image: url("../img/newbies-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newbies::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(13, 43, 67, 0.8);
+  mix-blend-mode: multiply;
+  filter: blur(315px);
+}
+
+.newbies__title {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 16px;
+  padding-left: 100px;
+  max-width: 521px;
+  color: #fff;
+  background-image: url("../img/star.svg");
+  background-position: left center;
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+}
+
+.newbies__content {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 60px;
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.newbies__descr {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.newbies__link {
+  position: relative;
+  z-index: 5;
+  min-width: 257px;
+}

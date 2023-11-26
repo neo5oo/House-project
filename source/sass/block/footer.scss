@@ -1,0 +1,157 @@
+.footer {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: $color-gin;
+}
+
+.footer__left {
+  margin-right: 115px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 33px;
+}
+
+.footer-phone__link {
+  position: relative;
+  z-index: 5;
+  outline: none;
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-shark;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-phone__link::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: $color-leaves;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-phone__link:focus {
+  color: $color-shark;
+}
+
+.footer-phone__link:focus::after {
+  opacity: 1;
+}
+
+.footer-phone__link:hover {
+  color: $color-leaves;
+}
+
+.footer-phone__link:active {
+  color: $color-killarney;
+}
+
+.footer-phone__text {
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-mantle;
+}
+
+.footer__right {
+  display: flex;
+  flex-grow: 1;
+}
+
+.footer-menu {
+  display: flex;
+  margin-right: auto;
+}
+
+.footer-props {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-menu__col:not(:last-child) {
+  margin-right: 63px;
+}
+
+.footer-menu__title {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: $color-shark;
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.footer-menu__link {
+  position: relative;
+  outline: none;
+  z-index: 5;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-mantle;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-menu__link::after {
+  content: "";
+  position: absolute;
+  left: -6px;
+  right: -6px;
+  top: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background-color: $color-leaves;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-menu__link:focus {
+  color: $color-shark;
+}
+
+.footer-menu__link:focus::after {
+  opacity: 1;
+}
+
+.footer-menu__link:hover {
+  color: $color-leaves;
+}
+
+.footer-menu__link:active {
+  color: $color-killarney;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding-top: 11px;
+  padding-right: 29px;
+  font-size: 12px;
+  line-height: 120%;
+  color: $color-mantle;
+}
+
+.footer__copyright span {
+  margin-top: 6px;
+  display: block;
+}

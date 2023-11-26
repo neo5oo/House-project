@@ -1,0 +1,33 @@
+.about {
+  padding: 70px 0;
+}
+
+.about__image {
+  grid-column: 5 span;
+}
+
+.about__content {
+  padding-top: 123px;
+  grid-column: 7 span;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__descr {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 150%;
+  color: $color-shark;
+}
+
+.about__team {
+  display: flex;
+  align-items: center;
+}
+
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}

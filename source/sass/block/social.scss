@@ -1,0 +1,57 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social__link {
+  position: relative;
+  outline: none;
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: $color-shark;
+  transition: color 0.3s ease-in-out;
+}
+
+.social__link::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  border-radius: 2px;
+  background-color: $color-surf;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social__link svg {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  object-fit: cover;
+}
+
+.social__link:focus {
+  color: $color-leaves;
+}
+
+.social__link:focus::after {
+  opacity: 1;
+}
+
+.social__link:hover {
+  color: $color-leaves;
+}
+
+.social__link:active {
+  color: $color-killarney;
+}
